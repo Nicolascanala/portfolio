@@ -38,3 +38,15 @@ function setTheme(mode){
 
 	localStorage.setItem('theme', mode)
 }
+
+const alerts = () => {
+	alert("Are you sure? :(")
+}
+
+const alerts1 = () => {
+	alert("Does this mean you'll come back? :)")
+}
+
+const alerts2 = () => {
+	alert("Awesome!! Hit me up by filling in my contact form below :)")
+}
