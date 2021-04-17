@@ -1,4 +1,4 @@
-console.log('Its working')
+console.log('Hello')
 
 let theme = localStorage.getItem('theme')
 
@@ -50,3 +50,5 @@ const alerts1 = () => {
 const alerts2 = () => {
 	alert("Awesome!! Hit me up by filling in my contact form below :)")
 }
+
+console.log(alerts + alerts1);
