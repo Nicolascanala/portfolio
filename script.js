@@ -1,52 +1,55 @@
-let theme = localStorage.getItem('theme')
+let theme = localStorage.getItem("theme");
 
-if(theme == null){
-	setTheme('light')
-}else{
-	setTheme(theme)
+// if (theme == null) {
+//   setTheme("light");
+// } else {
+//   setTheme(theme);
+// }
+
+if (theme == null) {
+  setTheme("blue");
+} else {
+  setTheme(theme);
 }
 
-let themeDots = document.getElementsByClassName('theme-dot')
+let themeDots = document.getElementsByClassName("theme-dot");
 
-
-for (var i=0; themeDots.length > i; i++){
-	themeDots[i].addEventListener('click', function(){
-		let mode = this.dataset.mode
-		console.log('Option clicked:', mode)
-		setTheme(mode)
-	})
+for (var i = 0; themeDots.length > i; i++) {
+  themeDots[i].addEventListener("click", function () {
+    let mode = this.dataset.mode;
+    console.log("Option clicked:", mode);
+    setTheme(mode);
+  });
 }
 
-function setTheme(mode){
-	if(mode == 'light'){
-		document.getElementById('theme-style').href = 'default.css'
-	}
+function setTheme(mode) {
+  if (mode == "light") {
+    document.getElementById("theme-style").href = "default.css";
+  }
 
-	if(mode == 'blue'){
-		document.getElementById('theme-style').href = 'blue.css'
-	}
+  if (mode == "blue") {
+    document.getElementById("theme-style").href = "blue.css";
+  }
 
-	if(mode == 'green'){
-		document.getElementById('theme-style').href = 'green.css'
-	}
+  if (mode == "green") {
+    document.getElementById("theme-style").href = "green.css";
+  }
 
-	if(mode == 'purple'){
-		document.getElementById('theme-style').href = 'purple.css'
-	}
+  if (mode == "purple") {
+    document.getElementById("theme-style").href = "purple.css";
+  }
 
-	localStorage.setItem('theme', mode)
+  localStorage.setItem("theme", mode);
 }
 
 const alerts = () => {
-	alert("Are you sure? :(")
-}
+  alert("Are you sure? :(");
+};
 
 const alerts1 = () => {
-	alert("Does this mean you'll come back? :)")
-}
+  alert("Does this mean you'll come back?");
+};
 
 const alerts2 = () => {
-	alert("Awesome!! Hit me up by filling in my contact form below :)")
-}
-
-console.log(alerts + alerts1);
+  alert("Awesome! Hit me up by filling in my contact form below :)");
+};
