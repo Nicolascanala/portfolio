@@ -1,13 +1,7 @@
 let theme = localStorage.getItem("theme");
 
-// if (theme == null) {
-//   setTheme("light");
-// } else {
-//   setTheme(theme);
-// }
-
 if (theme == null) {
-  setTheme("blue");
+  setTheme("light");
 } else {
   setTheme(theme);
 }
